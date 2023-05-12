@@ -3113,7 +3113,7 @@ function swing(p) {
  * My modified code ===============================================================================*/
 
 /*
-Date */
+Dynamic Date */
 
 window.onload = function() {
     var currentDate = new Date();
@@ -3140,4 +3140,11 @@ window.onload = function() {
 
     document.getElementById('currentDate').textContent = month + ' ' + dayWithSuffix + ', ' + year;
 };
+
+/* Video Player image overlay*/
+
+document.getElementById('playButton').addEventListener('click', function() {
+    window.open('https://www.youtube.com/watch?v=2-jvlhc7c58', '_blank');
+});
+
 

@@ -3864,3 +3864,22 @@ Slides Index
   border-color: #eee;
   color: #ccc;
 }
+
+/* BACKGROUND OVERLAY */
+
+.overlay-container {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  /* Adjust color and opacity as needed */
+  z-index: -1;
+}

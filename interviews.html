@@ -108,24 +108,23 @@
   <main role="main">
     <article>
 
-      <section class="bg-black">
-        <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
-        <span class="background"
-          style="background-image:url('https://source.unsplash.com/E695OZJiju4/1600x800')"></span>
-        <!--.wrap = container width: 90% -->
-        <div class="wrap">
+    <section class="bg-black">
+      <span class="background dark" style="background-image:url('./static/images/main_backgroound.png')"></span>
+      <div class="wrap">
+        <div class="overlay-container">
           <h1>
             <strong class="article-title">One Monday After</strong>
           </h1>
-          <p>Fueling Your F1 Passion</p>
+          <p>Fueling our F1 Passion</p>
           <p>
             <img class="avatar-40" src="/static/images/Avatar_2.jpg" alt="Avatar">
             Miguel Rodriguez. <span id="currentDate"></span>
           </p>
-
         </div>
-        <!-- .end .wrap -->
-      </section>
+      </div>
+    </section>
+
+
       <section class="bg-white">
         <!--.wrap.longform (width:72rem=720px) = Better reading experience (90-95 characters per line) -->
         <div class="wrap longform">
@@ -186,9 +185,15 @@
           </dl>
           <hr>
           <div class="text-pull embed">
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/7xYZ3rMT8_A?rel=0&amp;controls=0"
-              allowfullscreen></iframe>
+            <div id="videoContainer" style="position: relative; width: 750px; height: 415px;">
+              <img id="backgroundImage" src="/static/images/playbutton-backgroun.png"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" />
+              <img id="playButton" src="/static/images/video_player_button.png"
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); cursor: pointer;" />
+            </div>
           </div>
+
+
           <!--.text-pull.embed (responsive video) -->
           <hr>
           <dl class="text-interview">
