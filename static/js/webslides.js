@@ -3148,3 +3148,12 @@ document.getElementById('playButton').addEventListener('click', function() {
 });
 
 
+/* Email code */
+
+function sendEmail() {
+        var email = document.getElementById("email").value;
+        var subject = "Your Thoughts";
+        var emailBody = "Hi,\n\nI want to share my thoughts:";
+        window.location = `mailto:${email}?subject=${subject}&body=${emailBody}`;
+    }
+

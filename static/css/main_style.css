@@ -3883,3 +3883,31 @@ Slides Index
   /* Adjust color and opacity as needed */
   z-index: -1;
 }
+
+/* Video playback */
+
+.text-pull.embed #videoContainer {
+  position: relative;
+  width: 750px;
+  height: 415px;
+}
+
+#playButton {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 50%;
+  height: auto;
+}
+
+#highlightText {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #333333;
+  font-size: 20px;
+  text-align: center;
+}
