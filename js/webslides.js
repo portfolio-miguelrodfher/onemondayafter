@@ -3155,5 +3155,12 @@ function sendEmail() {
         var subject = "Your Thoughts";
         var emailBody = "Hi,\n\nI want to share my thoughts:";
         window.location = `mailto:${email}?subject=${subject}&body=${emailBody}`;
-    }
+}
+    
+
+// PLay button redirect to youtube
+  function openVideo(videoUrl) {
+    // Open the YouTube video URL in a new tab
+    window.open(videoUrl, '_blank');
+  }
 
