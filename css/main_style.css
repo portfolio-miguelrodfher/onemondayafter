@@ -3923,7 +3923,7 @@ Slides Index
   width: 100%;
 }
 
-/* Backgrouind for takeaway section */
+
 /* Background for takeaway section */
 .takeaways {
   background-image: url("../images/play-background.png");
@@ -3946,3 +3946,5 @@ Slides Index
 .email-contact-section{
   padding: 1px;
 }
+
+/* for span and letters */
