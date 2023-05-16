@@ -3164,3 +3164,11 @@ function sendEmail() {
     window.open(videoUrl, '_blank');
   }
 
+
+  // site counter
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-XXXXXXXXX-X');
+  
+
