@@ -3169,6 +3169,26 @@ function sendEmail() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-XXXXXXXXX-X');
+gtag('config', 'UA-XXXXXXXXX-X');
+  
+
+// Check if the visit count is stored in local storage
+let count = localStorage.getItem('visitCount');
+
+// If the count doesn't exist, initialize it to 0
+if (!count) {
+  count = 0;
+}
+
+// Increment the count
+count++;
+
+// Store the updated count in local storage
+localStorage.setItem('visitCount', count);
+
+// Display the count in the desired element
+const visitCounter = document.getElementById('visit-counter');
+visitCounter.textContent = count;
+
   
 
