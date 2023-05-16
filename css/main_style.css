@@ -3925,7 +3925,7 @@ Slides Index
 
 /* Backgrouind for takeaway section */
 .takeaways {
-  background-image: url('/images/playbutton-backgroun.png');
+  background-image: url("/images/playbutton-backgroun.png");
   background-size: cover;
   /* this will ensure the image covers the full area of the section */
   background-position: center;
