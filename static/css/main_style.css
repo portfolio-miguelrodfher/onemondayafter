@@ -1440,7 +1440,7 @@ section,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
+  min-height: 5 0vh;
   /*Fullscreen*/
   /* Prototyping? min-height: 720px (Baseline: 8px = .8rem)*/
   padding: 2.4rem;
@@ -3884,30 +3884,64 @@ Slides Index
   z-index: -1;
 }
 
+
 /* Video playback */
 
 .text-pull.embed #videoContainer {
   position: relative;
   width: 750px;
   height: 415px;
+  background-color: transparent;
+  /* Add this line to make the background transparent */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #playButton {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   cursor: pointer;
-  width: 50%;
+  width: 30%;
   height: auto;
 }
 
 #highlightText {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: #333333;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
+  margin-top: 10px;
+  /* adjust as needed */
+}
+
+.video-player-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+  width: 100%;
+}
+
+/* Backgrouind for takeaway section */
+.takeaways {
+  background-image: url('/static/images/playbutton-backgroun.png');
+  background-size: cover;
+  /* this will ensure the image covers the full area of the section */
+  background-position: center;
+  /* this will center the image in the section */
+  background-repeat: no-repeat;
+  /* this will prevent the image from repeating */
+  background-color: rgba(221, 238, 255, 0.8);
+  color: inherit;
+}
+    
+.takeaways h3,
+.highlight-text {
+  color: #ffffff;
+  /* this is the hexadecimal color code for white */
+}
+
+.email-contact-section{
+  padding: 1px;
 }
