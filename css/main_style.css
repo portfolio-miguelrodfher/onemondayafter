@@ -3902,11 +3902,21 @@ Slides Index
 
 #playButton {
   cursor: pointer;
-  width: 30%;
-  height: auto;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  /* adjust as needed */
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+  /* smooth color transition with a 0.3s delay */
 }
 
-#highlightText {
+#playButton:hover {
+  color: #00ffbf;
+  /* red color on hover */
+}
+
+.highlight-text {
   color: #ffffff;
   font-size: 20px;
   text-align: center;
