@@ -3190,5 +3190,18 @@ localStorage.setItem('visitCount', count);
 const visitCounter = document.getElementById('visit-counter');
 visitCounter.textContent = count;
 
+// CSP youtube video code for URLs
+  function playVideo(videoUrl) {
+    var player = new YT.Player('player', {
+      height: '415',
+      width: '750',
+      videoId: extractVideoId(videoUrl),
+    });
+  }
+
+  function extractVideoId(url) {
+    var match = url.match(/[?&]v=([^&#]+)/);
+    return match ? match[1] : null;
+  }
   
 

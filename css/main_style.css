@@ -3885,8 +3885,7 @@ Slides Index
 }
 
 
-/* Video playback */
-
+/* Video playback with a button */
 .text-pull.embed #videoContainer {
   position: relative;
   width: 750px;
@@ -3933,6 +3932,7 @@ Slides Index
   width: 100%;
 }
 
+/* Video playback with CSP Youtube rights */
 
 /* Background for takeaway section */
 .takeaways {
